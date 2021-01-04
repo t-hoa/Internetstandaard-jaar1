@@ -1,0 +1,313 @@
+HTML,
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-size: 80%;
+  letter-spacing: 0.15em;
+}
+
+/* source image background: http://www.4usky.com/download/164603350.html */
+body {
+  background-image: url('../images/background.jpg');
+}
+
+/* lay-out container */
+#container-content{
+  max-width: 930px;
+  min-width: 720px;
+  /* t & b */
+  margin: 0px auto 0px auto;
+  padding: 20px;
+  border: 4px hidden #000;
+  background-image: linear-gradient(to bottom right, #2F4F4F, white);
+}
+
+/* decoration heading main titel */
+header>h1 {
+  width: 150px;
+  margin: 10px auto 25px auto;
+  font-family: 'ZapfChan Md BT', cursive;
+}
+
+/* animation heading 1 source: https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation3 */
+header>h1 {
+  color: black;
+  position: relative;
+  -webkit-animation-duration: 4s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 2s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0% {
+    color: black;
+    left: 0px;
+    top: 0px;
+  }
+
+  25% {
+    color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+
+  50% {
+    color: blue;
+    left: 200px;
+    top: 200px;
+  }
+
+  75% {
+    color: green;
+    left: 0px;
+    top: 200px;
+  }
+
+  100% {
+    color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* Standard syntax */
+@keyframes example {
+  0% {
+    color: black;
+    left: 0px;
+    top: 0px;
+  }
+
+  25% {
+    color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+
+  50% {
+    color: blue;
+    left: 200px;
+    top: 200px;
+  }
+
+  75% {
+    color: green;
+    left: 0px;
+    top: 200px;
+  }
+
+  100% {
+    color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+/* end animation heading h1 */
+
+/* navigation menu */
+nav ul {
+  width: 570px;
+  padding: 15px;
+  margin: 0px auto 0px auto;
+  border-top: 4px double #000;
+  border-bottom: 4px double #000;
+  text-align: center;
+}
+/* link next to each other */
+nav li {
+  display: inline;
+  margin: 0px 3px;
+}
+/* link in the menu tekst decoration, remove bullets */
+nav a {
+  color: black;
+  font-family: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px 18px 5px 18px;
+}
+
+/* when the link selected in the menu */
+a:hover, a.selected {
+  color: #ffffff;
+  font-family: bold;
+  border-bottom: 2px dotted #000;
+}
+/* end navigation menu decoration */
+
+/* --homepage-- image: Tatiana Maslany */
+article img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* content of the pages */
+main {
+  text-align: left;
+  width: 600px;
+  margin: 20px auto 20px auto;
+  max-width: 800px;
+}
+
+/* --homepage-- figure>figcaption decoration */
+
+main figure figcaption {
+  color: #314151;
+  border-bottom: 1px solid #ddd;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+}
+
+/* --homepage-- center tekst en subtitel */
+article h2
+{
+  font-size: 1.8em;
+  text-align: center;
+}
+article p {
+  font-size: 1.1em;
+}
+
+article h3
+{
+  font-size: 1.4em;
+  text-align: center;
+}
+/* end homepage tekst center */
+
+/*   --characters page--    */
+/* decoration article */
+.container-p
+{
+display: block;
+border: 1px ridge #ffffff;
+width: 500px;
+margin: 20px auto 20px auto;
+max-width: 800px;
+
+}
+
+/* img center */
+figure.image
+{
+float: left;
+margin-left: 10px;
+margin-top: 10px;
+}
+/* paragraph article center characters */
+.container-p > p
+{
+margin-left: 10px;
+margin-right: 10px;
+clear: left;
+}
+/* position heading h3 characters */
+h3.heading
+{
+  margin-top: 70px;
+  margin-left: 200px
+}
+
+h3.heading-flex
+{
+margin-top: 90px;
+margin-left: 10px
+} /* end h3 characters */
+
+/* -- Seasons page -- */
+
+/* table */
+table
+{
+ border-collapse: collapse;
+  margin:50px;
+
+}
+
+/* table heading decoration */
+th
+{
+
+font-weight: bold;
+ color: #ADEFAF;
+ text-align: left;
+ border-bottom: 1px solid #ddd;
+ font-size: 120%;
+ height: 30px;
+ width: 170px;
+}
+
+th, td
+{
+border-bottom: 1px solid #ddd;
+padding 0.8em 1em;
+
+}
+
+td{
+height: 30px;
+}
+/* end table */
+
+/* table heading <h2> center */
+section h2
+{
+text-align: center;
+}
+
+/* -- end seasons page -- */
+
+/* -- contact page  -- */
+/* form label name */
+label
+{
+ display: block;
+ color: black;
+ margin: 1em 0 0.5em 0;
+}
+/* input tekst form */
+input, textarea
+{
+ font-size: 1em;
+ padding: 0.8em;
+ border: 1px solid #ddd;
+ display: block;
+ width: 100%;
+ max-width: 400px;
+ box-sizing: border-box;
+}
+
+textarea
+{
+ font-family: Arial, sans-serif;
+ height: 100px;
+ margin-bottom: 1em;
+}
+
+legend
+{
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em
+}
+fieldset
+{
+  background-color: #92AF99;
+   width: 50%;
+   max-width: 300px;
+   min-width: 100px;
+   margin: 0px auto 0px auto;
+}
+
+footer {
+  text-align: center;
+}
